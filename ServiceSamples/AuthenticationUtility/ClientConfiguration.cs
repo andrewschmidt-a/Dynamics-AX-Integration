@@ -34,7 +34,7 @@ namespace AuthenticationUtility
             ActiveDirectoryClientAppId = "0ad95f25-12af-4bf2-9e3b-26e34747fcf1",
             //ActiveDirectoryClientAppId = "d8da61f7-f80e-4cf4-b7c2-85324dce4eb5",
             //ActiveDirectoryClientAppId = "d8192dda-bb8a-4bd5-8262-48c789201381",
-            AADClientSecret = "lBJGr1Rkmo95KgIWofyU/4TR/Sk1x3TUt90ak5eaUUs=",
+            AADClientSecret = "",
             AzureAuthEndPoint = "https://login.windows.net",
         };
 
