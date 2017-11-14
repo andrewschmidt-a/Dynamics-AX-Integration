@@ -8,17 +8,34 @@ namespace AuthenticationUtility
 {
     public partial class ClientConfiguration
     {
+        //public static ClientConfiguration Default { get { return ClientConfiguration.OneBox; } }
+
+        /*public static ClientConfiguration OneBox = new ClientConfiguration()
+        {
+            UriString = "https://usnconeboxax1aos.cloud.onebox.dynamics.com/",
+            UserName = "",
+            Password = "",
+            ActiveDirectoryResource = "https://usnconeboxax1aos.cloud.onebox.dynamics.com",
+            ActiveDirectoryTenant = "https://raikesdesignstudio.onmicrosoft.com/",
+            ActiveDirectoryClientAppId = "0ad95f25-12af-4bf2-9e3b-26e34747fcf1",
+            //ActiveDirectoryClientAppSecret = "luveHIRZ6390$edpIBT2)*!",
+            ActiveDirectoryClientAppSecret = "lBJGr1Rkmo95KgIWofyU/4TR/Sk1x3TUt90ak5eaUUs=",
+        };*/
+
         public static ClientConfiguration Default { get { return ClientConfiguration.OneBox; } }
 
         public static ClientConfiguration OneBox = new ClientConfiguration()
         {
             UriString = "https://usnconeboxax1aos.cloud.onebox.dynamics.com/",
-            UserName = "tusr1@TAEOfficial.ccsctp.net",
-            Password = "PASSWORD",
+            UserName = "",
+            Password = "",
             ActiveDirectoryResource = "https://usnconeboxax1aos.cloud.onebox.dynamics.com",
-            ActiveDirectoryTenant = "https://login.windows-ppe.net/TAEOfficial.ccsctp.net",
-            ActiveDirectoryClientAppId = "d8a9a121-b463-41f6-a86c-041272bdb340",
-            ActiveDirectoryClientAppSecret = "",
+            ActiveDirectoryTenant = "raikesdesignstudio.onmicrosoft.com",
+            ActiveDirectoryClientAppId = "0ad95f25-12af-4bf2-9e3b-26e34747fcf1",
+            //ActiveDirectoryClientAppId = "d8da61f7-f80e-4cf4-b7c2-85324dce4eb5",
+            //ActiveDirectoryClientAppId = "d8192dda-bb8a-4bd5-8262-48c789201381",
+            AADClientSecret = "lBJGr1Rkmo95KgIWofyU/4TR/Sk1x3TUt90ak5eaUUs=",
+            AzureAuthEndPoint = "https://login.windows.net",
         };
 
         public string UriString { get; set; }
@@ -27,6 +44,7 @@ namespace AuthenticationUtility
         public string ActiveDirectoryResource { get; set; }
         public String ActiveDirectoryTenant { get; set; }
         public String ActiveDirectoryClientAppId { get; set; }
-        public string ActiveDirectoryClientAppSecret { get; set; }
+        public string AADClientSecret { get; set; }
+        public string AzureAuthEndPoint { get; set; }
     }
 }
